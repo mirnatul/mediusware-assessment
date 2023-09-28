@@ -37,9 +37,9 @@ const Problem2 = () => {
                         </div>
                         <div className="modal-body">
                             <div className='d-flex gap-4 justify-content-center my-3'>
-                                <Link to='/all-contacts' onClick={() => setModalT('all')} type="button" class="btn btn-primary">All Contacts</Link>
-                                <button onClick={() => setModalT('us')} type="button" class="btn btn-primary">US Contacts</button>
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button onClick={() => setModalT('all')} type="button" class="btn-a">All Contacts</button>
+                                <button onClick={() => setModalT('us')} type="button" class="btn-b">US Contacts</button>
+                                <button type="button" className="btn-c" data-bs-dismiss="modal">Close</button>
                             </div>
                             <table class="table">
                                 <thead>
@@ -101,10 +101,10 @@ const Problem2 = () => {
                 <h4 className='text-center text-uppercase mb-5'>Problem-2</h4>
 
                 <div className="d-flex justify-content-center gap-3">
-                    <button onClick={() => setModalT('all')} type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button onClick={() => setModalT('all')} type="button" className="btn-a" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         All Contacts
                     </button>
-                    <button onClick={() => setModalT('us')} type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button onClick={() => setModalT('us')} type="button" className="btn-b" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         US Contacts
                     </button>
                 </div>

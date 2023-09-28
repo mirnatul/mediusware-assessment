@@ -1,3 +1,21 @@
 .modal {
     max-height: 100vh;
 }
+
+.btn-a {
+    background-color: #46139f;
+    color: white;
+    padding: 8px 14px;
+}
+
+.btn-b {
+    background-color: #ff7f50;
+    color: white;
+    padding: 8px 14px;
+}
+
+.btn-c {
+    background-color: #46139f;
+    color: white;
+    padding: 8px 14px;
+}
