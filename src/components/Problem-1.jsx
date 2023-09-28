@@ -15,7 +15,8 @@ const Problem1 = () => {
 
     const activeUserStatus = userStatus.filter((each) => each.status === 'active')
     const completedUserStatus = userStatus.filter((each) => each.status === 'completed')
-    // console.log(activeUserStatus);
+    const otherStatus = userStatus.filter((each) => each.status !== 'active' && each.status !== 'completed')
+    const allUserStatus = [...activeUserStatus, ...completedUserStatus, ...otherStatus]
 
 
 
@@ -68,7 +69,7 @@ const Problem1 = () => {
                         </thead>
                         <tbody>
                             {show === 'all' &&
-                                userStatus?.map((eachPair, index) => <tr key={index}>
+                                allUserStatus?.map((eachPair, index) => <tr key={index}>
                                     <td>{eachPair.name}</td>
                                     <td>{eachPair.status}</td>
                                 </tr>)
